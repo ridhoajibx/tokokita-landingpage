@@ -39,7 +39,7 @@ class TokokitaWeb extends React.Component {
                      </div>
                 </div>
 
-                <div className="web-tengah">
+        <div className="web-tengah">
                     <div className="toko-soon">
                         Coming Soon
                     </div>
@@ -91,9 +91,25 @@ class TokokitaWeb extends React.Component {
                     </div>
                 </div> 
             </div> 
+
+            <div className="toko-coming-explain">
+                <div className="coming-text">
+                    Coming Soon
+                </div>
+                <div className="coming-sentence">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's <br /> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </div>
+            </div>
+
+            <div className="toko-green-rectangle"></div>
+
+            <div className="green-tengah">
+                <div className="left"></div>
+                <div className="right"></div>
+            </div>
                 
                    
-            </div>
+        </div>
 
                 <style jsx>
                     {`
@@ -210,6 +226,50 @@ class TokokitaWeb extends React.Component {
                             display: flex;
                             align-items: center;
                         }
+
+                        .toko-coming-explain {
+                            display: flex;
+                            align-items: center;
+                            padding: 0 29em 0 15em;
+                            margin: 0 0em 10em 0em;
+                        }
+
+                       
+
+                        .coming-text {
+                            padding: 0 18em 0 0em;
+                        }
+
+                        .coming-sentence {
+                            padding: 0 25em 0 0em;
+                        }
+
+                        .toko-green-rectangle {
+                            background: linear-gradient(89.99deg, #27AE60 3.62%, rgba(40, 202, 107, 0.6) 60.12%);
+                            padding: 8em 1em 8em 1em;
+                            margin: 0em 13.42em 6.35em 13.71em;
+                        }
+
+                        .green-tengah {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .left {
+                            padding: 10em 10em 10em 10em;
+                            background: linear-gradient(308.85deg, #27AE60 -1.71%, rgba(40, 202, 107, 0.79) 74.54%);
+                            border-radius: 10px;
+                            margin: 0 0 0 15em;
+                        }
+
+                        .right {
+                            padding: 10em 10em 10em 10em;
+                            background: linear-gradient(308.85deg, #27AE60 -1.71%, rgba(40, 202, 107, 0.79) 74.54%);
+                            border-radius: 10px;
+                            margin: 0 0 0 15em;
+                        }
+
+                       
 
                         
                     `}
