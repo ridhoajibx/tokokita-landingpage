@@ -44,36 +44,53 @@ class TokokitaWeb extends React.Component {
                         Coming Soon
                     </div>
 
-                <div className="toko-coming-soon">
+            <div className="toko-coming-soon">
+                <div className="soon">
                     <div className="coming-box">
-                        <div className="text">
-                            Coming Soon
-                        </div>
-                        <div className="lorem">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        </div>
-                    </div>
-
-                    <div className="coming-box">
-                        <div className="text">
-                            Coming Soon
-                        </div>
-                        <div className="lorem">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        </div>
-                    </div>
-
-                    <div className="toko-coming-soon-1">
-                        <div className="coming-box">
                             <div className="text">
                                 Coming Soon
                             </div>
                             <div className="lorem">
                             Lorem Ipsum is simply dummy text    of the printing and typesetting    industry. Lorem Ipsum has been the     industry's standard dummy text  ever since the 1500s, when an    unknown printer took a galley of   type and scrambled it to make a   type specimen book. 
                             </div>
-                        </div>
+                    </div>
+                </div>
+                    
+                <div className="soon-1">
+                     <div className="coming-box-1">
+                            <div className="text">
+                                Coming Soon
+                            </div>
+                            <div className="lorem">
+                            Lorem Ipsum is simply dummy text    of the printing and typesetting    industry. Lorem Ipsum has been the     industry's standard dummy text  ever since the 1500s, when an    unknown printer took a galley of   type and scrambled it to make a   type specimen book. 
+                            </div>
                     </div>
                 </div> 
+            </div> 
+
+            <div className="toko-coming-soon">
+                <div className="soon">
+                    <div className="coming-box">
+                            <div className="text">
+                                Coming Soon
+                            </div>
+                            <div className="lorem">
+                            Lorem Ipsum is simply dummy text    of the printing and typesetting    industry. Lorem Ipsum has been the     industry's standard dummy text  ever since the 1500s, when an    unknown printer took a galley of   type and scrambled it to make a   type specimen book. 
+                            </div>
+                    </div>
+                </div>
+                    
+                <div className="soon-1">
+                     <div className="coming-box-1">
+                            <div className="text">
+                                Coming Soon
+                            </div>
+                            <div className="lorem">
+                            Lorem Ipsum is simply dummy text    of the printing and typesetting    industry. Lorem Ipsum has been the     industry's standard dummy text  ever since the 1500s, when an    unknown printer took a galley of   type and scrambled it to make a   type specimen book. 
+                            </div>
+                    </div>
+                </div> 
+            </div> 
                 
                    
             </div>
@@ -166,8 +183,16 @@ class TokokitaWeb extends React.Component {
                             background: #FFFFFF;
                             box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
                             border-radius: 10px;
-                            padding: 16em 1em 1em 1em;
-                            margin: 0 81em 2em 17em;
+                            padding: 16em 0em 1em 1em;
+                            margin: 0 13em 4.29em 13em;
+                        }
+
+                        .coming-box-1 {
+                            background: #FFFFFF;
+                            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+                            border-radius: 10px;
+                            padding: 16em 0em 1em 1em;
+                            margin: 0 13em 4.29em 13em;
 
                         }
 
@@ -177,14 +202,16 @@ class TokokitaWeb extends React.Component {
                         }
 
                         .lorem {
-                            padding: 3.28em 3.28em 0 3.28em;
+                            padding: 3.28em 1.28em 0 1.28em;
                             font-size: 16px;
                         }
 
-                        .toko-coming-soon-1 {
+                        .toko-coming-soon {
                             display: flex;
                             align-items: center;
                         }
+
+                        
                     `}
                 </style>
             </div>
