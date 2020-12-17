@@ -121,6 +121,73 @@ class TokokitaWeb extends React.Component {
             </div>
         </div>
 
+        <div className="toko-bottom">
+
+            <div className="bottom-coming">
+                Coming Soon
+            </div>
+            
+            <div className="bottom-tengah">
+                <div className="bikini-bottom">
+                    <div className="bottom-text">
+                        Lorem Ipsum is simply dummy text    of     the     printing and    typesetting industry.  Lorem Ipsum     has been the industry's     standard   dummy text  ever since the 1500s,     when an unknown printer    took a  galley     of type and scrambled it to   make     a  type specimen book. 
+                    </div>
+                </div>
+            </div>
+
+                <div className="logos">
+                    <div className="playstore">
+                        <img src="/images/gp.png" alt="playstore" />
+                    </div>
+                    <div clasName="app-store">
+                        <img src="/images/as.png" alt="appstore" />
+                    </div>
+                </div>
+
+                <div className="border">
+                    <div className="borders"></div>
+                </div>
+
+                <div className="toko-bawah">
+                    TOKOKITA
+                </div>
+
+                <div className="toko-group">
+                    <div className="phone-number">
+                        Nomor Telfon
+                    </div>
+                    <div className="about-us">
+                        About US
+                    </div>
+                    <div className="follow-us">
+                        Follow Us
+                    </div>
+                </div>
+
+                
+                <div className="email">
+                    Email
+                </div>
+                
+                <div className="about-group">
+                    <div className="abot">
+                        About
+                    </div>
+                    <div className="instagram">
+                        Instagram
+                    </div>
+
+                    <div className="column">
+                        <div className="facebook">
+                            Facebook
+                        </div>
+                        <div classNmae="Linkedin">
+                            Linkedin
+                        </div>
+                    </div>
+                </div>
+        </div>
+
                 <style jsx>
                     {`
                         .web-atas {
@@ -303,6 +370,96 @@ class TokokitaWeb extends React.Component {
                             color: #fff;
                         }
 
+                        .toko-bottom {
+                            background: linear-gradient(90deg, #28CA6B 0%, rgba(40, 202, 107, 0.03) 92.6%);
+                            border-radius: 0px 200px 0px 0px;
+                        }
+
+                        .bottom-coming {
+                            padding: 6.5em 0 5.57em 7em;
+                            font-size: 29px;
+                            color: #fff;
+                        }
+
+                        .bottom-text {
+                            margin: 0em 45em 0em 0em;
+                            padding: 0 0em 0 10em;
+                            color: #fff;
+                        }
+
+                        .logos {
+                            text-align: right;
+                            padding: 0 23em 7.14em 0em;
+                            margin: -6em 0 0em 0;
+                        }
+
+                        .borders {
+                            border: 1px solid #FFFFFF;
+
+                        }
+                        
+                        .border {
+                            padding: 0 0 6.5em 0;
+                        }
+
+                        .toko-bawah {
+                            font-size: 36px;
+                            font-weight: bold;
+                            color: #fff;
+                            padding: 0 0 1.75em 4em;
+                        }
+
+                        .toko-group {
+                            display: flex;
+                            align-items: center;
+                            padding: 0 0 1.14em 9em;
+                        }
+
+                        .phone-number {
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 0 3em 0 0;
+                        }
+
+                        .about-us {
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 0 3em 0 0;
+                        }
+
+                        .follow-us {
+                            font-size: 16px;
+                            color: #fff;
+                        }
+
+                        .email {
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 0 0 1.75em 9em;
+                        }
+
+                        .about-group {
+                            display: flex;
+                            align-items: center;
+                            padding: 0 0 0 18em;
+                        }
+
+                        .abot {
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 0 5em 0 0;
+                        }
+
+                        .instagram {
+                            font-size: 16px;
+                            color: #fff;
+                        }
+
+                        .column {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                       
                        
 
                         
