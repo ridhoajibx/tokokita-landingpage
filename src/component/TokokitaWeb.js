@@ -106,9 +106,19 @@ class TokokitaWeb extends React.Component {
             <div className="green-tengah">
                 <div className="left"></div>
                 <div className="right"></div>
+            </div>     
+        </div>
+
+        <div className="toko-background-tengah">
+
+            <div className="toko-com">
+                <div className="coming">
+                    Comming Soon
+                </div>
+                <div className="come-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
             </div>
-                
-                   
         </div>
 
                 <style jsx>
@@ -253,6 +263,7 @@ class TokokitaWeb extends React.Component {
                         .green-tengah {
                             display: flex;
                             align-items: center;
+                            margin: 0 0 13em 0;
                         }
 
                         .left {
@@ -267,6 +278,29 @@ class TokokitaWeb extends React.Component {
                             background: linear-gradient(308.85deg, #27AE60 -1.71%, rgba(40, 202, 107, 0.79) 74.54%);
                             border-radius: 10px;
                             margin: 0 0 0 15em;
+                        }
+
+                        .toko-background-tengah {
+                            background: #27AE60;
+                            border-radius: 200px 0px 0px 0px;
+                        }
+
+                        .toko-com {
+                            display: flex;
+                            align-items: center;
+                            padding: 6.85em 6.85em 38em 15em;
+                            
+                        }
+
+                        .coming {
+                            padding: 0 6.5em 0 0;
+                            font-size: 36px;
+                            color: #fff;
+                        }
+
+                        .come-text {
+                            font-size: 16px;
+                            color: #fff;
                         }
 
                        
