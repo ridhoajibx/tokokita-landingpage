@@ -67,7 +67,6 @@ class TokokitaWeb extends React.Component {
                     </div>
                 </div> 
             </div> 
-
             <div className="toko-coming-soon">
                 <div className="soon">
                     <div className="coming-box">
@@ -164,28 +163,37 @@ class TokokitaWeb extends React.Component {
                     </div>
                 </div>
 
-                
-                <div className="email">
+                <div className="belah">
+                    
+                <div className="email-sbout">
+                    <div className="email">
                     Email
-                </div>
-                
-                <div className="about-group">
+                    </div>
                     <div className="abot">
                         About
                     </div>
-                    <div className="instagram">
-                        Instagram
-                    </div>
 
-                    <div className="column">
-                        <div className="facebook">
+                    <div className="columbus">
+                        <div className="instagram">
+                            Instragram
+                        </div>
+                        <div className="Facebook">
                             Facebook
                         </div>
-                        <div classNmae="Linkedin">
-                            Linkedin
+                        <div className="linkedin">
+                            linkedin
                         </div>
                     </div>
+
                 </div>
+
+                <div className="logo-lagi">
+                    <img src="/images/logo 2.png" alt="logos" />
+                </div>
+                    
+                </div>
+                
+                
         </div>
 
                 <style jsx>
@@ -307,7 +315,7 @@ class TokokitaWeb extends React.Component {
                         .toko-coming-explain {
                             display: flex;
                             align-items: center;
-                            padding: 0 29em 0 15em;
+                            padding: 0 0em 0 16em;
                             margin: 0 0em 10em 0em;
                         }
 
@@ -447,17 +455,34 @@ class TokokitaWeb extends React.Component {
                         .abot {
                             font-size: 16px;
                             color: #fff;
-                            padding: 0 5em 0 0;
+                            padding: 0 5em 0 6.5em;
                         }
 
                         .instagram {
                             font-size: 16px;
                             color: #fff;
+                            padding: 0 0 1em 0
                         }
 
                         .column {
                             display: flex;
                             flex-direction: column;
+                        }
+
+                        Facebook {
+                            color: #fff;
+                            font-size: 16px;
+                            padding: 0 0 1em 0;
+                        }
+
+                        .linkedin {
+                            color: #fff;
+                            font-size: 16px;
+                        }
+
+                        .belah {
+                            display: flex;
+                            align-items: center;
                         }
                        
                        
