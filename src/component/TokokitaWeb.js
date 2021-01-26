@@ -45,7 +45,25 @@ class TokokitaWeb extends React.Component {
                     </div>
 
             <div className="toko-coming-soon">
-                <div className="soon">
+                <div className="card-container">
+                    <div className="card">
+                    <div className="text">
+                                Coming Soon
+                            </div>
+                            <div className="lorem">
+                            Lorem Ipsum is simply dummy text    of the printing and typesetting    industry. Lorem Ipsum has been the     industry's standard dummy text  ever since the 1500s, when an    unknown printer took a galley of   type and scrambled it to make a   type specimen book. 
+                            </div>
+                    </div>
+                    <div className="card">
+                    <div className="text">
+                                Coming Soon
+                            </div>
+                            <div className="lorem">
+                            Lorem Ipsum is simply dummy text    of the printing and typesetting    industry. Lorem Ipsum has been the     industry's standard dummy text  ever since the 1500s, when an    unknown printer took a galley of   type and scrambled it to make a   type specimen book. 
+                            </div>
+                    </div>
+                </div>
+                {/* <div className="soon">
                     <div className="coming-box">
                             <div className="text">
                                 Coming Soon
@@ -65,7 +83,7 @@ class TokokitaWeb extends React.Component {
                             Lorem Ipsum is simply dummy text    of the printing and typesetting    industry. Lorem Ipsum has been the     industry's standard dummy text  ever since the 1500s, when an    unknown printer took a galley of   type and scrambled it to make a   type specimen book. 
                             </div>
                     </div>
-                </div> 
+                </div>  */}
             </div> 
             <div className="toko-coming-soon">
                 <div className="soon">
@@ -198,6 +216,19 @@ class TokokitaWeb extends React.Component {
 
                 <style jsx>
                     {`
+                    .card-container {
+                        display: flex;
+                        justify-content: space-around;
+                        width: 100%;
+                        margin-bottom: 4em;
+                    }
+                    .card {
+                        background: #fff;
+                        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+                        border-radius: 10px;
+                        padding: 16em 0em 1em 1em;
+                        width: 20%;
+                    }
                         .web-atas {
                             background: linear-gradient(360deg, rgba(0, 81, 100, 0) 0%, #27AE60 100%);
                             padding: 0 0 11.57em;
