@@ -13,7 +13,7 @@ import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 const Header = tw.header`
   flex justify-between items-center
   max-w-screen-xl mx-auto
-  fixed z-50 left-0 right-0 px-4 py-2
+  fixed z-50 left-0 right-0 top-0 px-4 lg:py-2 py-1 
   bg-white rounded-lg
   `;
 
