@@ -13,10 +13,10 @@ import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 const Header = tw.header`
   flex justify-between items-center
   max-w-screen-xl mx-auto
-  fixed z-50 left-0 right-0 top-0 px-4 lg:py-2 py-1 
-  bg-white rounded-lg
+  fixed right-0 left-0 z-50 bg-white top-0 px-3 lg:px-4
   `;
-
+// fixed z-50 left-0 right-0 top-0 px-4 lg:py-2 py-1 
+// bg-white rounded-lg
 export const NavLinks = tw.div`inline-block`;
 
 /* hocus: stands for "on hover or focus"
@@ -36,10 +36,10 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black text-primary-700 border-b-0 text-4xl! ml-0!`};
+  ${tw`flex items-center font-black text-primary-700 border-b-0 text-2xl lg:text-4xl! ml-0!`};
 
   img {
-    ${tw`w-24 mr-0`}
+    ${tw`w-16 lg:w-24 mr-0`}
   }
 `;
 
