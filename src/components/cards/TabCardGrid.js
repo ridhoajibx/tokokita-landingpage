@@ -33,12 +33,12 @@ const CardImageContainer = styled.div`
   ${tw`h-56 xl:h-64 bg-center bg-cover relative rounded-t`}
 `;
 const CardRatingContainer = tw.div`leading-none absolute inline-flex bg-gray-100 bottom-0 left-0 ml-4 mb-4 rounded-full px-5 py-2 items-end`;
-const CardRating = styled.div`
-  ${tw`mr-1 text-sm font-bold flex items-end`}
-  svg {
-    ${tw`w-4 h-4 fill-current text-orange-400 mr-1`}
-  }
-`;
+// const CardRating = styled.div`
+//   ${tw`mr-1 text-sm font-bold flex items-end`}
+//   svg {
+//     ${tw`w-4 h-4 fill-current text-orange-400 mr-1`}
+//   }
+// `;
 
 const CardHoverOverlay = styled(motion.div)`
   background-color: rgba(255, 255, 255, 0.5);
@@ -46,12 +46,12 @@ const CardHoverOverlay = styled(motion.div)`
 `;
 const CardButton = tw(PrimaryButtonBase)`text-sm`;
 
-const CardReview = tw.div`font-medium text-xs text-gray-600`;
+// const CardReview = tw.div`font-medium text-xs text-gray-600`;
 
 const CardText = tw.div`p-4 text-gray-900`;
 const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500`;
 const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600`;
-const CardPrice = tw.p`mt-4 text-xl font-bold`;
+// const CardPrice = tw.p`mt-4 text-xl font-bold`;
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-pink-400`}
@@ -71,8 +71,7 @@ export default ({
                 // price: "$5.99",
                 rating: "5.0",
                 reviews: "87",
-                // url: "#",
-                gPlay: "#google",
+                url: "#",
                 iStore: "#istore",
             },
             {
@@ -82,8 +81,7 @@ export default ({
                 // price: "$5.99",
                 rating: "5.0",
                 reviews: "87",
-                // url: "#",
-                gPlay: "#google",
+                url: "#",
                 iStore: "#istore",
             },
             {
@@ -93,8 +91,7 @@ export default ({
                 // price: "$5.99",
                 rating: "5.0",
                 reviews: "87",
-                // url: "#",
-                gPlay: "#google",
+                url: "#",
                 iStore: "#istore",
             },
             {
@@ -104,8 +101,7 @@ export default ({
                 // price: "$5.99",
                 rating: "5.0",
                 reviews: "87",
-                // url: "#",
-                gPlay: "#google",
+                url: "#",
                 iStore: "#istore",
             },
             {
@@ -115,8 +111,7 @@ export default ({
                 // price: "$5.99",
                 rating: "5.0",
                 reviews: "87",
-                // url: "#",
-                gPlay: "#google",
+                url: "#",
                 iStore: "#istore",
             },
             {
@@ -126,8 +121,7 @@ export default ({
                 // price: "$5.99",
                 rating: "5.0",
                 reviews: "87",
-                // url: "#",
-                gPlay: "#google",
+                url: "#",
                 iStore: "#istore",
             },
         ],
@@ -177,14 +171,14 @@ export default ({
                     >
                         {tabs[tabKey].map((card, index) => (
                             <CardContainer key={index}>
-                                <Card className="group" href={card.gPlay} initial="rest" whileHover="hover" animate="rest">
+                                <Card className="group" href={card.url} initial="rest" whileHover="hover" animate="rest">
                                     <CardImageContainer imageSrc={card.imageSrc}>
                                         <CardRatingContainer>
-                                            <CardRating>
+                                            {/* <CardRating>
                                                 <StarIcon />
                                                 {card.rating}
-                                            </CardRating>
-                                            <CardReview>({card.reviews})</CardReview>
+                                            </CardRating> */}
+                                            {/* <CardReview>({card.reviews})</CardReview> */}
                                         </CardRatingContainer>
                                         <CardHoverOverlay
                                             variants={{
@@ -199,13 +193,13 @@ export default ({
                                             }}
                                             transition={{ duration: 0.3 }}
                                         >
-                                            <CardButton>Go To Google Play</CardButton>
+                                            <CardButton>Go To Website</CardButton>
                                         </CardHoverOverlay>
                                     </CardImageContainer>
                                     <CardText>
                                         <CardTitle>{card.title}</CardTitle>
                                         <CardContent>{card.content}</CardContent>
-                                        <CardPrice>{card.price}</CardPrice>
+                                        {/* <CardPrice>{card.price}</CardPrice> */}
                                     </CardText>
                                 </Card>
                             </CardContainer>
