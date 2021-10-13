@@ -10,10 +10,11 @@ import logo from "../../images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
+import { Link } from "react-router-dom"
+
 const Header = tw.header`
   flex justify-between items-center
-  max-w-screen-xl mx-auto
-  fixed right-0 left-0 z-50 bg-white top-0 px-3 lg:px-4
+  fixed right-0 left-0 z-50 bg-white top-0 px-3 py-2 lg:px-4
   `;
 // fixed z-50 left-0 right-0 top-0 px-4 lg:py-2 py-1 
 // bg-white rounded-lg
@@ -22,7 +23,7 @@ export const NavLinks = tw.div`inline-block`;
 /* hocus: stands for "on hover or focus"
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
  */
-export const NavLink = tw.a`
+export const NavLink = tw(Link)`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
   pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
@@ -74,14 +75,14 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
      */
     const defaultLinks = [
         <NavLinks key={1}>
-            <NavLink href="/#">Home</NavLink>
-            <NavLink href="/#">News</NavLink>
-            <NavLink href="/#">About Us</NavLink>
-            <NavLink href="/#">Contact Us</NavLink>
-            {/* <NavLink href="/#" tw="lg:ml-12!">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/news">News</NavLink>
+            <NavLink to="/about-us">About Us</NavLink>
+            <NavLink to="/contact-us">Contact Us</NavLink>
+            {/* <NavLink to="/#" tw="lg:ml-12!">
         Login
       </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink> */}
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}to="/#">Sign Up</PrimaryLink> */}
         </NavLinks>
     ];
 
@@ -89,7 +90,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
     const defaultLogoLink = (
-        <LogoLink href="/">
+        <LogoLink to="/">
             <img src={logo} alt="logo" className="w-full" />
             <i>TokoKita</i>
         </LogoLink>
