@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import Header from "components/headers/light";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 // import MainFeature from "components/features/TwoColWithButton.js";
@@ -22,10 +23,11 @@ export default () => {
     const Subheading = tw.span`tracking-wider text-sm font-medium`;
     const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
     const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
-    const Description = tw.span`inline-block mt-8`;
+    // const Description = tw.span`inline-block mt-8`;
     const imageCss = tw`rounded-4xl`;
     return (
         <AnimationRevealPage>
+            <Header />
             <Hero
                 heading={<>Toko Onlinenya Jaman Now, Ya! <HighlightedText>TokoKita.</HighlightedText></>}
                 description="Satu aplikasi yang membuat hidup kita lebih efisien, dari kemudahan berbelanja hingga kesehatan anda. Segala jenis layanan dalam satu genggaman. jadikan semua lebih mudah dengan tokokita."
@@ -36,32 +38,6 @@ export default () => {
                 primaryButtonText="Cuci Sekarang"
                 watchVideoButtonText="Mari Berkenalan"
             />
-            {/* <MainFeature
-                subheading={<Subheading>Established Since 2016</Subheading>}
-                heading={
-                    <>
-                        We've been serving for
-                        <wbr /> <HighlightedText>over 4 years.</HighlightedText>
-                    </>
-                }
-                description={
-                    <Description>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-            <br />
-                        <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </Description>
-                }
-                buttonRounded={false}
-                textOnLeft={false}
-                primaryButtonText="About Us"
-                imageSrc={heroImage}
-                imageCss={imageCss}
-                imageDecoratorBlob={true}
-                imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
-            /> */}
-            {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
             <TabGrid
                 heading={
                     <>
